@@ -1,0 +1,41 @@
+<template name="settings">
+  {{#contentFor "headerButtonRight"}}
+    <a href="{{pathFor 'home'}}" class="button button-icon icon ion-bonfire"></a>
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Settings</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionContent}}
+      {{#ionList class="my-class"}}
+
+        {{#ionItem avatar=true}}
+          <img data-ion-modal="setting1" src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
+          <h2 data-ion-modal="setting1">Setting One</h2>
+          <p data-ion-modal="setting1">Description of setting one.</p>
+        {{/ionItem}}
+
+        {{#ionItem avatar=true}}
+          <img data-ion-modal="setting2" src="https://randomuser.me/api/portraits/thumb/men/24.jpg">
+          <h2 data-ion-modal="setting2">Setting Two</h2>
+          <p data-ion-modal="setting2">Description of setting two.</p>
+        {{/ionItem}}
+
+        {{#ionItem avatar=true}}
+          <img data-ion-modal="setting3" src="https://randomuser.me/api/portraits/thumb/men/22.jpg">
+          <h2 data-ion-modal="setting3">Setting Three</h2>
+          <p data-ion-modal="setting3">Description of setting three.</p>
+        {{/ionItem}}
+
+        {{#ionItem avatar=true}}
+          <img data-ion-modal="setting4" src="https://randomuser.me/api/portraits/thumb/men/21.jpg">
+          <h2 data-ion-modal="setting4">Setting Four</h2>
+          <p data-ion-modal="setting4">Description of setting four.</p>
+        {{/ionItem}}
+
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>
