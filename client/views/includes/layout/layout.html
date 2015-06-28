@@ -1,0 +1,15 @@
+<template name="layout">
+  {{#ionBody}}
+    {{> ionNavBar}}
+
+    {{#ionNavView}}
+      {{> yield}}
+    {{/ionNavView}}
+  {{/ionBody}}
+</template>
+
+<head>
+  <title>It's Tinder for X!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
